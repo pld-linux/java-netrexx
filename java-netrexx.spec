@@ -22,6 +22,8 @@ Rexx oraz Javy. Jest to dialekt jêzyka Rexx zachowuj±cy przeno¶no¶æ i
 wydajno¶æ Javy, bêd±cy jednocze¶nie ³atwy do nauczenia i u¿ywania tak
 jak Rexx.
 
+%define _noautocompressdoc *.au *.class *.nrx *.txt *.zip
+
 %prep
 %setup -q -n NetRexx
 
