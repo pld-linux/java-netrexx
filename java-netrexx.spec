@@ -1,5 +1,5 @@
 Summary:	NetRexx - programming language derived from both Rexx and Java
-Summary(pl.UTF-8):   NetRexx - język programowania wywodzący się z języka Rexx i Javy
+Summary(pl.UTF-8):	NetRexx - język programowania wywodzący się z języka Rexx i Javy
 Name:		netrexx
 Version:	2.05
 Release:	1
