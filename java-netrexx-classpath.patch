@@ -1,0 +1,12 @@
+diff -ur NetRexx-o/bin/NetRexxC.sh NetRexx/bin/NetRexxC.sh
+--- NetRexx-o/bin/NetRexxC.sh	2000-08-20 12:47:22.000000000 -0600
++++ NetRexx/bin/NetRexxC.sh	2007-04-04 11:17:18.000000000 -0600
+@@ -40,7 +40,7 @@
+   netrexx_run=yes
+ fi
+ 
+-java -ms4M $NETREXX_JAVA COM.ibm.netrexx.process.NetRexxC $*
++java -ms4M -classpath /usr/share/java/NetRexxC.jar $NETREXX_JAVA COM.ibm.netrexx.process.NetRexxC $*
+ if test $? -eq 0; then
+   if test "$netrexx_run" = "yes"; then
+     echo "Running $1..."
