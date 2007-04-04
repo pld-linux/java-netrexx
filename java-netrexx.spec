@@ -7,6 +7,7 @@ License:	IBM proprietary, distributable (see license.txt)
 Group:		Development/Languages/Java
 Source0:	http://www-306.ibm.com/software/awdtools/netrexx/NetRexx.zip
 # Source0-md5:	07622f619758b83d593a127f4a2542f1
+Patch0:	%{name}-classpath.patch
 URL:		http://www2.hursley.ibm.com/netrexx/
 BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,6 +27,10 @@ jak Rexx.
 
 %prep
 %setup -q -n NetRexx
+%patch0 -p1
+
+%build
+find '(' -name '*.sh' -o -name 'nrc' ')' -print0 | xargs -0 sed -i -e 's,\r$,,'
 
 %install
 rm -rf $RPM_BUILD_ROOT
