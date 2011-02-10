@@ -22,7 +22,7 @@ Obsoletes:	netrexx
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define _noautocompressdoc *.au *.class *.nrx *.txt *.zip
+%define		_noautocompressdoc *.au *.class *.nrx *.txt *.zip
 
 %description
 NetRexx is a programming language derived from both Rexx and Java. It
@@ -36,23 +36,24 @@ wydajność Javy, będący jednocześnie łatwy do nauczenia i używania tak
 jak Rexx.
 
 %package doc
-Summary:	Manual for %{name}
-Summary(fr.UTF-8):	Documentation pour %{name}
-Summary(it.UTF-8):	Documentazione di %{name}
-Summary(pl.UTF-8):	Podręcznik dla %{name}
+Summary:	Manual for NetRexx
+Summary(fr.UTF-8):	Documentation pour NetRexx
+Summary(it.UTF-8):	Documentazione di NetRexx
+Summary(pl.UTF-8):	Podręcznik do języka NetRexx
 Group:		Documentation
+Obsoletes:	netrexx-doc
 
 %description doc
-Documentation for %{name}.
+Documentation for NetRexx.
 
 %description doc -l fr.UTF-8
-Documentation pour %{name}.
+Documentation pour NetRexx.
 
 %description doc -l it.UTF-8
-Documentazione di %{name}.
+Documentazione di NetRexx.
 
 %description doc -l pl.UTF-8
-Dokumentacja do %{name}.
+Dokumentacja do języka NetRexx.
 
 %prep
 %setup -q -n NetRexx
