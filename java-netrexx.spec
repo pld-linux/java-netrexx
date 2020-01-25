@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 #
 %define		pkgname	netrexx
 #
