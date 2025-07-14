@@ -56,7 +56,7 @@ Dokumentacja do języka NetRexx.
 
 %prep
 %setup -q -n NetRexx
-%patch0 -p1
+%patch -P0 -p1
 find '(' -name '*.sh' -o -name 'nrc' ')' -print0 | xargs -0 sed -i -e 's,\r$,,'
 
 %build
