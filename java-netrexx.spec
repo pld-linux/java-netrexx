@@ -5,7 +5,7 @@ Summary:	NetRexx - programming language derived from both Rexx and Java
 Summary(pl.UTF-8):	NetRexx - język programowania wywodzący się z języka Rexx i Javy
 Name:		java-%{pkgname}
 Version:	2.05
-Release:	1
+Release:	2
 License:	IBM proprietary, distributable (see license.txt)
 Group:		Development/Languages/Java
 Source0:	http://www-306.ibm.com/software/awdtools/netrexx/NetRexx.zip
